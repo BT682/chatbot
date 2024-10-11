@@ -3,8 +3,7 @@ import openai
 import os
 
 # Set your OpenAI API key securely
-# Replace 'YOUR_OPENAI_API_KEY' with your actual API key
-openai.api_key = os.getenv("OPENAI_API_KEY", "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")
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Function to correct grammar
 def correct_grammar(text):
@@ -17,7 +16,7 @@ def correct_grammar(text):
             ],
             temperature=0.0,  # For consistent results
         )
-        corrected_text = response['choices'][0]['message']['content'].strip()
+        corrected_text = response.choices[0].message.content.strip()
         return corrected_text
     except Exception as e:
         return f"An error occurred: {e}"
