@@ -1,5 +1,5 @@
 import streamlit as st
-import openai
+import openai migrate
 import os
 
 # Set your OpenAI API key securely
