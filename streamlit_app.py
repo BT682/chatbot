@@ -4,7 +4,7 @@ import os
 
 # Set your OpenAI API key securely
 # Option 1: Use environment variables (recommended)
-openai.api_key = os.getenv("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")
+openai.api_key = os.getenv("Open AI")
 
 # Option 2: Use Streamlit's secrets management
 # Uncomment the line below and set your API key in .streamlit/secrets.toml
