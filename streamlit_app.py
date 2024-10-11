@@ -4,7 +4,7 @@ import os
 
 # Set your OpenAI API key securely
 # Replace 'YOUR_OPENAI_API_KEY' with your actual API key
-openai.api_key = os.getenv("OPENAI_API_KEY", "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")
+openai.api_key = os.getenv("OPENAI_API_KEY", "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")
 
 # Function to correct grammar
 def correct_grammar(text):
